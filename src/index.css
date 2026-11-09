@@ -1,0 +1,63 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,800,700,600,500,400,300&f[]=clash-display@700,600,500,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-serif,
+  .font-display {
+    font-family: 'Satoshi', 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  }
+  .font-clash {
+    font-family: 'Clash Display', 'Plus Jakarta Sans', system-ui, sans-serif !important;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: #FBF9F5;
+    color: #111827;
+    overflow-x: hidden;
+  }
+  
+  ::selection {
+    background-color: #009EE0;
+    color: #ffffff;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F2EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4CDBC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B3A994;
+}
+
+/* Subtle luxury backdrop & borders */
+.border-subtle {
+  border-color: rgba(229, 223, 213, 0.9);
+}
+
+.bg-glass {
+  background-color: rgba(251, 249, 245, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
