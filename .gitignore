@@ -5,3 +5,4 @@ dist-ssr
 .env
 .dev.vars
 .DS_Store
+.wrangler
